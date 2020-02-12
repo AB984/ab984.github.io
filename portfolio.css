@@ -1,0 +1,65 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+
+:root {
+    --yellow:rbg(253, 236, 182);
+    --green:rbg(206, 221, 115);
+    --black:rbg(93, 42, 33);
+
+    --heading-font: 'Poppins';
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+   font-family: 'Playfair Display', serif;
+    src: url();
+}
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+ul {
+    list-style:none;
+}
+
+.header {
+    margin: 0;
+    text-align: right;
+    background: url(../extraNonsense/DSC_0222.JPG) center bottom;
+    background-size: cover;
+    /* color:#82D35F; */
+    height: 63vh;
+    /* font-family: var(--heading-font); */
+
+}
+
+.headerText {
+    padding: 370px 40px 0px 0px;
+    color: rgb(253, 236, 182);
+}
+
+.aboutMe {
+    text-emphasis: none;
+    text-align: right;
+}
+
+.contactMe {
+    text-align: left;
+}
