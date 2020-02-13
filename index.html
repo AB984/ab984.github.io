@@ -7,122 +7,158 @@
     <title>AB's Portfolio</title>
     <link rel="stylesheet" href="./portfolio.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 <body>
     <div class="wrapper">
-        <div class="navBar">
-            <nav></nav>
-        </div>
         <div class="bodyContainer">
             <div class="backgroundImgOne">
                 <div class="header">
-                    <div class="headerText">
-                        <span><b>AB Scherschel</b></span>
-                        <h3>Junior Developer</h3>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="https://ab984.github.io/"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="https://ab984.github.io/">Home <span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#contactMe">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#aboutMe">About Me</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#projects" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Projects
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" target="blank" href="https://codepen.io/ABWylde/pen/VwYNyXo">CSS Creature</a>
+                                <a class="dropdown-item" target="blank" href="https://ab984.github.io/StaticLayout/">Static Webpage</a>
+                                <a class="dropdown-item" target="blank" href="https://ab984.github.io/CryptoAPI/">CoinBase API</a>
+                                <a class="dropdown-item" target="blank" href="https://repl.it/@ABScherschel/32-Guessing-Game">Repl - Guessing Game</a>
+
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>        
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                          <h1 class="display-4">AB Scherschel</h1>
+                          <p class="lead">Junior Developer</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
-            <div class="projects">
-                <!-- <ul>
-                    <li><a href=""></a>CSS Creature</li>
-                    <li><a href=""></a>NYT API</li>
-                    <li><a href=""></a>Static Website</li>
-                    <li><a href=""></a>CSS Creature</li>
-                </ul> -->
+            <div class="projectBackground">
+            <div class="projects" id="projects">
+                <h3>PROJECTS</h3>
+                <br>
                 <ul class="list-unstyled">
                     <li class="media">
-                      <img src="..." class="mr-3" alt="...">
+                      <img src="../extraNonsense/cssCreatureThumbnail.png" class="mr-3" alt="...">
                       <a target="blank" href="https://codepen.io/ABWylde/pen/VwYNyXo">
                       <div class="media-body">
                         <h5 class="mt-0 mb-1">CSS Creature</h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
                       </div>
                       </a>
                     </li>
+                    <br>
+                    <br>
+                    <br>
                     <li class="media my-4">
-                      <img src="..." class="mr-3" alt="...">
+                      <img src="../extraNonsense/staticThumbnail.png" class="mr-3" alt="...">
                       <a target="blank" href="https://ab984.github.io/StaticLayout/">
                       <div class="media-body">
                         <h5 class="mt-0 mb-1">Static Website - Eleven Fifty Homepage</h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        
                       </div>
                       </a>
                     </li>
-                    <li class="media">
+                    <br>
+                    <br>
+                    <br>
+                    <!-- <li class="media">
                       <img src="..." class="mr-3" alt="...">
                       <div class="media-body">
                         <h5 class="mt-0 mb-1">New York Times API</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                       </div>
-                    </li>
+                    </li> -->
                     <li class="media">
-                        <img src="..." class="mr-3" alt="...">
+                        <img src="../extraNonsense/cryptoAPI-thumbnail.png" class="mr-3" alt="...">
                         <a target="blank" href="https://ab984.github.io/CryptoAPI/">
                         <div class="media-body">
                           <h5 class="mt-0 mb-1">CoinBase API</h5>
-                          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                          
                         </div>
                         </a>
                     </li>
-                    <li class="media">
+                    <!-- <li class="media">
                         <img src="..." class="mr-3" alt="...">
                         <div class="media-body">
                           <h5 class="mt-0 mb-1">Blue Badge</h5>
                           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                         </div>
-                    </li>
+                    </li> -->
                   </ul>
+            </div>
             </div>
             <br>
             <br>
-            <br>
-            <div class="aboutMe">
-                <span>About Me</span>
-                <h3>My Story</h3>
-                <p>I am an artist, gone tech.</p>
-                <a href="https://drive.google.com/file/d/1iCITNVSVb5WL5jPCC1F5_4xgeVWyoWGg/view?usp=sharing" target="blank"><h3>Resume</h3></a>
-                <iframe src="http://docs.google.com/gview?url=https://drive.google.com/file/d/1iCITNVSVb5WL5jPCC1F5_4xgeVWyoWGg/view?usp=sharing" height="200" width="300"></iframe>
-                <!-- <embed id="plugin" type="application/x-google-chrome-pdf" src="file:///Users/juliascherschel/Desktop/javascript-library/projects/portfolio/extraNonsense/Resume_Updated%20_02-12-2020.pdf" stream-url="chrome-extension://mhjfbmdgcfjbbpaeojofohoefgiehjai/1bb125f1-fe00-4acb-ad07-1c4fb2639d5d" headers="" background-color="0xFF525659" top-toolbar-height="56" javascript="allow" full-frame="">            </div> -->
-            <br>
-            <br>
-            <br>
             <div class="backgroundImgTwo">
-                <div class="contactMe">
-                    <span>Contact</span>
-                    <br>
+            <div class="aboutMe" id="aboutMe">
+                <h3>ABOUT ME</h3>
+                <br>
+                <span><b>My Story:</b></span>
+                <p>I am a scientific artist, gone tech. I began my career search in the medical field, but was not reaching my potential in the framework of the healthcare system. My creative mind will thrive through a stimulating and diverse career path. Now, I am enthusiastically combining my skillsets as a developer. Click on the image below to view my full resume. </p>
+                <br>
+                <a href="https://drive.google.com/file/d/1iCITNVSVb5WL5jPCC1F5_4xgeVWyoWGg/view?usp=sharing" target="blank"><img src="../extraNonsense/resumeThumbnail.png" height="450" width="500"></a>
+                <br>
+                <a class="linkedIn"    href="https://www.linkedin.com/in/ab-scherschel-0595001a1/"><b>LinkedIn Profile </b></a>
+                <a class="linkedIn"    href="https://github.com/AB984"><b> GitHub Profile</b></a>
+
+                <div class="contactMe" id="contactMe">
+                    <h3>CONTACT ME</h3>
                     <br>
                     <form action="https://formspree.io/xwkoagdp" method="POST">
                         <label>
                             Your email:
                             <input type="text" name="_replyto">
                         </label>
-                        <br>
-                        <br>
                         <label>
                              Your message:
                               <textarea name="message"></textarea>
                         </label>
                         <br>
-                        <br>
   <!-- your other form fields go here -->
 
                          <button type="submit">Send</button>
+                         <br>
+                         <br>
                     </form>
+                    <br>
                 </div>
             </div>
         </div>
-        <footer></footer>
     </div>
+    
 
 
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script src="./portfolio.js"></script>
 </body>
+<footer><h6><i>-  February 2020  -  Background images are property of AB Scherschel  -</i> </h6></footer> 
 </html>

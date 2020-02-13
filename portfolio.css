@@ -15,9 +15,9 @@
 
 
 :root {
-    --yellow:rbg(253, 236, 182);
-    --green:rbg(206, 221, 115);
-    --black:rbg(93, 42, 33);
+    --yellowish: rgb(253, 236, 182);
+    --greenish: rgb(187, 203, 82);
+    --purpleish: rgb(93, 42, 33);
 
     --heading-font: 'Poppins';
 }
@@ -34,32 +34,194 @@ body {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
-
-ul {
-    list-style:none;
+.navbar {
+    border: 2px solid transparent;
+    background-color: var(--yellowish);
 }
 
-.header {
-    margin: 0;
+.dropdown-toggle {
+    color: var(--greenish);
+    padding: 16px;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    /* display: none; */
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rbga(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-menu a {
+    color: var(--yellowish);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* .navbar-toggler:hover .navbarNavDropdown {display: block;} */
+/* .navbar: {display: block; background-color: var(--greenish);} */
+/* .navbar-expand{-sm|-md|-lg|-xl} */
+.dropdown-menu a:hover {background-color: var(--yellowish);}
+.dropdown:hover .dropdown-menu {display: block;}
+.dropdown:hover .dropdown-toggle {background-color: var(--yellowish);}
+
+
+.jumbotron {
     text-align: right;
     background: url(../extraNonsense/DSC_0222.JPG) center bottom;
     background-size: cover;
+    background-position: center;
     /* color:#82D35F; */
-    height: 63vh;
+    height: 100vh;
     /* font-family: var(--heading-font); */
+    box-shadow: 0 0 220px 100px var(--yellowish);
+    
+}
+
+.jumbotron.jumbotron-fluid {
+    margin-bottom: 0;
+}
+
+.container {
+    padding: 500px 40px 0px 0px;
+    color: var(--yellow);
+}
+
+h3 {
+    font-family: var(--heading-font);
+    color: var(--purpleish);
 
 }
 
-.headerText {
-    padding: 370px 40px 0px 0px;
-    color: rgb(253, 236, 182);
+.projects {
+    padding-left: 20px;
+}
+
+.media a {
+    color: var(--purpleish);
+}
+
+.list-unstyled {
+    /* overflow: scroll; */
+    padding-top: 10px;
+    padding-left: 20px;
+    list-style:none;
+    max-width: 50vw;
+    max-height: 50vh;
+    /* border-radius: 15px; */
+    /* border: 3px inset var(--purple); */
+    /* box-shadow: 10px 20px 30px 30px; */
+}
+
+.projects img {
+    height: 25vh;
+    width: 15vw;
+    margin-left: 20px;
+    border: 3px solid var(--purpleish);
+    border-radius: 7px;
+}
+
+.projects {
+    max-width: 60vw;
+    text-decoration: none;
+}
+
+.projectBackground {
+    padding-top: 50px;
+    background-image: url(../extraNonsense/moreSkyBackground.png);
+    width: 100vw;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .aboutMe {
-    text-emphasis: none;
+    padding-right: 20px;
+    text-emphasis: bold;
+    text-align: right;
+}
+.aboutMe p {
+    padding-left: 30em;
     text-align: right;
 }
 
+.aboutMe img {
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.aboutMe img:hover {border: 3px solid var(--purpleish);}
+.linkedIn:hover {color: var(--purpleish);}
+
+.backgroundImgTwo {
+    /* padding-top: 170px;  */
+    /* height: 850px;  */
+    background: linear-gradient(transparent, var(--yellowish) ) ; 
+    background-size: 100%, 100%; 
+    box-shadow: 100px 100px 100px 50px rgba(253, 236, 182, 0.899); 
+    padding-bottom: 72px;
+    /* transform: rotate(180deg); */
+    background-repeat: no-repeat;
+    /* height: 100vh;
+    width: 100vw; */
+    border-radius: 2px;
+    /* background-size: cover; */
+    /* background: url(../extraNonsense/skyImage.png); */
+}
+
 .contactMe {
+    /* align-items: flex-start; */
+    max-width: 60vw;
+    max-height: 30vh;
+    padding: 30px;
     text-align: left;
+    bottom: 72px;
+}
+
+.contactMe button{
+    border-radius: 10px;
+    background-color: whitesmoke;
+    border: 3px solid var(--yellowish);
+    position: center;
+    margin-left: 60px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.contactMe button:hover{color: var(--purpleish); border: 2px solid var(--purpleish);
+}
+
+textarea {
+    border-radius: 7px;
+}
+
+input {
+    border-radius: 7px;
+}
+
+#contactMe label {
+    padding-top: 20px;
+    padding-left: 20px;
+    align-content: center;
+    background-color: whitesmoke;
+    height: 100px;
+    width: 400px;
+}
+
+footer {
+    border-bottom:5px solid var(--yellowish);
+    bottom: 0;
+    width: 100vw;
+    height: 22px;
+    position: fixed;
+    padding-bottom: 5px;
+    color: var(--purpleish);
+}
+
+footer h6 {
+    text-align: center;
 }
