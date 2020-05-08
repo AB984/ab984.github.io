@@ -96,6 +96,58 @@ h3 {
     color: var(--purpleish);
 
 }
+.skills {
+    padding: 5em;
+}
+.skillhead {
+    padding-left: 2em;
+}
+.row {
+    justify-content: center;
+    padding: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.devlogohtml {
+    height: 60px;
+    width: 60px;
+    margin-left: 3em; }
+  
+  .devlogocss {
+    height: 60px;
+    width: 60px;
+    margin-left: 3em; }
+  
+  .devlogojs {
+    height: 53px;
+    width: 53px;
+    margin-left: 3em; }
+  
+  .devlogonode {
+    height: 55px;
+    width: 55px;
+    margin-left: 3em; }
+  
+  .devlogopost {
+    height: 55px;
+    width: 55px;
+    margin-left: 3em; }
+  
+  .devlogotrello {
+    height: 50px;
+    width: 50px;
+    margin-left: 3em; }
+  
+  .devlogoreact {
+    height: 53px;
+    width: 53px;
+    margin-left: 3em; }
+  
+  .devlogogit {
+    height: 55px;
+    width: 55px;
+    margin-left: 3em; }
 
 .projects {
     padding-left: 3em;
@@ -110,7 +162,7 @@ h3 {
     padding-top: 3%;
     padding-left: 3em;
     list-style:none;
-    max-width: 50vw;
+    max-width: 40vw;
     max-height: 50vh;
     /* border-radius: 15px; */
     /* border: 3px inset var(--purple); */
@@ -145,14 +197,14 @@ h3 {
     text-align: right;
 }
 .aboutMe p {
-    padding-left: 43%;
+    padding-left: 53%;
     text-align: right;
 }
 
 .aboutMe img {
     border: 2px solid black;
     border-radius: 7px;
-    width: 50vw;
+    width: 40vw;
     height: 70vh;
 }
 
@@ -180,8 +232,8 @@ h3 {
     max-width: 50%;
     max-height: 30%;
     min-width: 65%;
-    padding: 2em;
-    text-align: left;
+    padding: 4em;
+    text-align: center;
     bottom: 4%;
     margin-left: 4%;
 }
@@ -192,7 +244,7 @@ h3 {
     border: 3px solid var(--yellowish);
     position: center;
     margin: 10%;
-    padding: 1em 6em;
+    padding: 1em;
 }
 
 .contactMe button:hover{color: var(--purpleish); border: 2px solid var(--purpleish);
