@@ -1,16 +1,16 @@
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
 
-// Small devices (landscape phones, 576px and up)
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { ... }
 
-// Medium devices (tablets, 768px and up)
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { ... }
 
-// Large devices (desktops, 992px and up)
+/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { ... }
 
-// Extra large devices (large desktops, 1200px and up)
+/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { ... }
 
 
@@ -151,6 +151,7 @@ h3 {
 
 .projects {
     padding-left: 3em;
+    text-align: left;
 }
 
 .media a {
@@ -162,8 +163,8 @@ h3 {
     padding-top: 3%;
     padding-left: 3em;
     list-style:none;
-    max-width: 40vw;
-    max-height: 50vh;
+    max-width: 60vw;
+    max-height: 60vh;
     /* border-radius: 15px; */
     /* border: 3px inset var(--purple); */
     /* box-shadow: 10px 20px 30px 30px; */
@@ -172,13 +173,20 @@ h3 {
 .projects img {
     height: 30%;
     width: 30%;
-    margin-left: 0%;
+    /* margin-left: 0%; */
     border: 3px solid var(--purpleish);
     border-radius: 7px;
 }
 
+.carousel {
+    max-width: 70vw;
+    max-height: 30vh;
+    
+}
+
 .projects {
-    max-width: 63vw;
+    align-items: center;
+    /* max-width: 63vw; */
     text-decoration: none;
 }
 
@@ -194,17 +202,17 @@ h3 {
 .aboutMe {
     padding-right: 3em;
     text-emphasis: bold;
-    text-align: right;
+    text-align: center;
 }
 .aboutMe p {
-    padding-left: 53%;
-    text-align: right;
+    padding: 3%;
+    text-align: center;
 }
 
 .aboutMe img {
     border: 2px solid black;
     border-radius: 7px;
-    width: 40vw;
+    width: 54vw;
     height: 70vh;
 }
 
