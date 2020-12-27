@@ -91,6 +91,7 @@ body {
     color: var(--yellow);
 }
 
+
 h3 {
     font-family: var(--heading-font);
     color: var(--purpleish);
@@ -178,11 +179,11 @@ h3 {
     border-radius: 7px;
 }
 
-.carousel {
+/* .carousel {
     max-width: 70vw;
     max-height: 30vh;
     
-}
+} */
 
 .projects {
     align-items: center;
@@ -200,6 +201,7 @@ h3 {
 }
 
 .aboutMe {
+    padding-top:10%;
     padding-right: 3em;
     text-emphasis: bold;
     text-align: center;
@@ -243,7 +245,7 @@ h3 {
     padding: 4em;
     text-align: center;
     bottom: 4%;
-    margin-left: 4%;
+    margin-left: 17%;
 }
 
 .contactMe button{
